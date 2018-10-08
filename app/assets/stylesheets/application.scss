@@ -12,4 +12,27 @@
  *
  */
 
- @import 'bootstrap'
+ @import 'bootstrap';
+$star-wars-yellow: #F9D71C;
+
+body{
+    background-color: #000;
+    color: #FFF;
+}
+
+h1{
+    color: $star-wars-yellow;
+}
+
+ .main-nav{
+     min-height: 6vh;
+     background-color: #222222;
+     
+     a{
+         color:$star-wars-yellow;
+     }
+
+     a:hover{
+         color: rgb(252, 236, 149);
+     }
+ }
