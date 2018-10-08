@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  episode_id: 1
+  opening_crawl: MyText
+  poster_uri: MyString
+
+two:
+  title: MyString
+  episode_id: 1
+  opening_crawl: MyText
+  poster_uri: MyString
