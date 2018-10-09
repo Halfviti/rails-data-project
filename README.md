@@ -4,39 +4,35 @@ This project will consume data from `SWAPI: The Star Wars API` and build a navig
 
 The models/tables will be as follows
 
-Character |
---------- |
-name |
-homeworld |
-films |
-    
-Appearances |
------------ |
-character_id |
-film_id |
-  
-Film |
------ |
-title |
-episode_id |
-opening_crawl |
-characters |
-poster_uri |
-  
-Planet |
------- |
-name |
-rotation_period |
-orbital_period |
-climate |
-terrain |
-population |
-residents (characters) |
 
-Species |
-------- |
-name |
-classification |
-designation |
-language |
-homeworld |
+
+
+
+
+    
+  
+Film          | Character | Appearances  | Planet          | Species        |
+------------  | --------- | -----------  | --------------- | -------------  |
+title         | name      | character_id | name            | name           |
+episode_id    | homeworld | film_id      | rotation_period | classification |
+opening_crawl | films     |              | orbital_period  | designation    |
+characters    |           |              | climate         | language       |
+[]()          |           |              | terrain         | homeworld      |
+[]()          |           |              | population      |                |
+[]()          |           |              | residents       |                |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
