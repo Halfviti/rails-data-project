@@ -1,6 +1,6 @@
 # README
 
-This project will consume data from `SWAPI: The Star Wars API` and build a navigable web-site from it. Data will be taken from the API and augmented with data from `The MovieDB`. The data will be used to model characters/roles and movie appearances.
+This project will consume data from `SWAPI: The Star Wars API` and build a navigable web-site from it`. The data will be used to model characters/roles and movie appearances as well as planets and species.
 
 The models/tables will be as follows
 
@@ -32,3 +32,11 @@ climate |
 terrain |
 population |
 residents (characters) |
+
+Species |
+------- |
+name |
+classification |
+designation |
+language |
+homeworld |
