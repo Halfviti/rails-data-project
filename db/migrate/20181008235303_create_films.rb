@@ -4,7 +4,6 @@ class CreateFilms < ActiveRecord::Migration[5.2]
       t.string :title
       t.integer :episode_id
       t.text :opening_crawl
-      t.string :poster_uri
 
       t.timestamps
     end
