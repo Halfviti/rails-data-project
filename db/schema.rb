@@ -48,8 +48,6 @@ ActiveRecord::Schema.define(version: 2018_10_10_154231) do
     t.integer "population"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "character_id"
-    t.index ["character_id"], name: "index_planets_on_character_id"
   end
 
   create_table "species", force: :cascade do |t|
