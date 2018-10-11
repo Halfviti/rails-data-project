@@ -1,4 +1,22 @@
 <div class="container mt-5">
-    <h1>Welcome#index</h1>
-    <p>Find me in app/views/welcome/index.html.erb</p>
+    <h1 class="mb-3">Films</h1>
+    <div class="d-grid">
+        <% @films.each do |film| %>
+            <article class="card d-col-flex">
+                <div class="card-body">
+                    <h5 class="card-title">Episode <%= film.episode_id %>: <%= film.title %></h5>
+                </div>
+            </article>
+        <% end %>
+    </div>
+    <h1 class="mt-5 mb-3">Characters</h1>
+    <div class="d-grid mb-auto">
+        <% @characters.each do |character| %>
+            <article class="card d-col-flex">
+                <div class="card-body">
+                    <h5 class="card-title"><%= character.name %></h5>
+                </div>
+            </article>
+        <% end %>
+    </div>
 </div>

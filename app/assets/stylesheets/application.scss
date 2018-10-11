@@ -24,19 +24,39 @@ h1{
     color: $star-wars-yellow;
 }
 
- .main-nav{
-     min-height: 6vh;
-     background-color: #222222;
-     
-     a{
-         color:$star-wars-yellow;
-     }
+a{
+    color:$star-wars-yellow;
+}
 
-     span{
-         color: $star-wars-yellow;
-     }
+a:hover{
+    color: rgb(252, 236, 149);
+}
 
-     a:hover{
-         color: rgb(252, 236, 149);
-     }
+.d-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+
+    article{
+        background-color: #222222;
+    }
+}
+
+.card-title{
+    font-size: 1rem;
+}
+
+.d-col-flex{
+    display: flex;
+    flex-flow: column;
+}
+
+.main-nav{
+    min-height: 6vh;
+    background-color: #222222;
+
+        span{
+            color: $star-wars-yellow;
+        }
  }
