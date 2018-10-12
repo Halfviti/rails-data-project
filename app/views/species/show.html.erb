@@ -15,6 +15,10 @@
         </ul>
     <h6>Homeworld</h6>
         <ul>
-            <li><%= link_to @species.homeworld.name, @species.homeworld %></li>
+            <%unless @species.homeworld == nil %>
+                <li><%= link_to @species.homeworld.name, @species.homeworld %></li>
+            <% else %>
+                <li>n/a</li>
+            <% end %>
         </ul>
 </div>

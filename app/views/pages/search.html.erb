@@ -1,6 +1,8 @@
 <h1>Search Results</h3>
 
 <%= paginate @search_results, window: 1 %>
+
+<% if @search_results.count != 0 %>
 <div class="d-grid">
     <% @search_results.each do |result| %>
     <article class="card d-col-flex">
@@ -10,3 +12,6 @@
     </article>
     <% end %>
 </div>
+<% else %>
+    <h6>No Results found.</h6>
+<% end %>
