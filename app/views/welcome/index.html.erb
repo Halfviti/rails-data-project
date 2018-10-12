@@ -4,7 +4,7 @@
         <% @films.each do |film| %>
             <article class="card d-col-flex">
                 <div class="card-body">
-                    <h5 class="card-title">Episode <%= film.episode_id %>: <%= film.title %></h5>
+                    <h5 class="card-title"><%= link_to "Episode #{film.episode_id}: #{film.title}", film %></h5>
                 </div>
             </article>
         <% end %>
@@ -14,7 +14,7 @@
         <% @characters.each do |character| %>
             <article class="card d-col-flex">
                 <div class="card-body">
-                    <h5 class="card-title"><%= character.name %></h5>
+                    <h5 class="card-title"><%= link_to character.name, character %></h5>
                 </div>
             </article>
         <% end %>

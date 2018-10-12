@@ -7,7 +7,7 @@
     <h6>Films:</h6>
         <ul>
             <% @character.films.each do |film| %>
-                <li>Episode <%= film.episode_id %>: <%= film.title %></li>
+                <li><%= link_to "Episode #{film.episode_id}: #{film.title}", film %></li>
             <% end %>
         </ul>
 </div>

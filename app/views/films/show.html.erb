@@ -1,0 +1,14 @@
+<h1>Episode <%= @film.episode_id %>: <%= @film.title %></h1>
+<div class="text-center">
+    <p><%= simple_format(@film.opening_crawl) %></p>
+</div>
+<h6>Featuring</h6>
+    <div class="d-grid">
+        <% @film.characters.each do |character| %>
+        <article class="card d-col-flex">
+            <div class="card-body">
+                <h5 class="card-title"><%= link_to character.name, character %></h5>
+            </div>
+            </article>
+        <% end%>
+    </div>

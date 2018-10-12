@@ -38,9 +38,15 @@ a:hover{
     grid-column-gap: 3px;
     grid-row-gap: 3px;
 
+    margin-left: 5px;
+    margin-right: 5px;
     article{
         background-color: #222222;
     }
+}
+
+.grid-l{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .card-title{
