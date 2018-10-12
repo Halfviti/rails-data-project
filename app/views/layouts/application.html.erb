@@ -11,30 +11,30 @@
 
   <body>
     <nav class="navbar navbar-expand-lg main-nav">
-      <a class="navbar-brand" href="/">Star Wars Rails App</a>
+      <%= link_to "Star Wars Rails App", root_path, class: "navbar-brand" %>
       <button class ="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
+          <li>
+            <%= link_to "Home", root_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/films">Films</a>
+            <%= link_to "Films", films_path, class: "nav-link" %> 
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/characters">Characters</a>
+            <%= link_to "Characters", characters_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/planets">Planets</a>
+            <%= link_to "Planets", planets_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/species">Species</a>
+            <%= link_to "Species", species_index_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
+            <%= link_to "About", about_path, class: "nav-link" %>
           </li>
         </ul>
         <%= form_tag(search_path, method: "get", class: "form-inline") do %>
