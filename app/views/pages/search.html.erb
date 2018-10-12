@@ -1,0 +1,12 @@
+<h1>Search Results</h3>
+
+<%= paginate @search_results, window: 1 %>
+<div class="d-grid">
+    <% @search_results.each do |result| %>
+    <article class="card d-col-flex">
+        <div class="card-body">
+            <h5 class="card-title"><%= link_to result.name, result %></h5>
+        </div>
+    </article>
+    <% end %>
+</div>
