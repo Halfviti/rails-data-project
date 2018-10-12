@@ -1,0 +1,29 @@
+<div class="container">
+    <h1><%= @planet.name %></h1>
+    <h6>Rotation Period</h6>
+        <ul>
+            <li><%= @planet.rotation_period %></li>
+        </ul>
+    <h6>Orbital Period</h6>
+        <ul>
+            <li><%= @planet.orbital_period %></li>
+        </ul>
+    <h6>Climate</h6>
+        <ul>
+            <li><%= @planet.climate %></li>
+        </ul>
+    <h6>Terrain</h6>
+        <ul>
+            <li><%= @planet.terrain %></li>
+        </ul>
+    <h6>Population</h6>
+        <ul>
+            <li><%= @planet.population %></li>
+        </ul>
+    <h6>Notable Residents:</h6>
+        <ul>
+            <% @planet.residents.each do |resident| %>
+                <li><%= link_to resident.name, resident %></li>
+            <% end %>
+        </ul>
+</div>

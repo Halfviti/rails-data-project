@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'planets/index'
   get 'planets/show'
   resources :characters, only: [:index, :show]
+  resources :planets, only: [:index, :show]
   resources :welcome, only: [:index]
 
   root 'welcome#index'

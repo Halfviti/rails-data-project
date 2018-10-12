@@ -1,7 +1,9 @@
 <div class="container">
     <h1><%= @character.name %></h1>
     <h6>Homeworld:</h6>
-                <%= @character.homeworld.name %>
+        <ul>
+            <li><%= link_to @character.homeworld.name, @character.homeworld %></li>
+        </ul>
     <h6>Films:</h6>
         <ul>
             <% @character.films.each do |film| %>

@@ -1,0 +1,11 @@
+<h1>Planets</h1>
+
+<div class="d-grid">
+    <% @planets.each do |planet| %>
+        <article class="card d-col-flex">
+            <div class="card-body">
+                <h5 class="card-title"><%= link_to planet.name, planet %></h5>
+            </div>
+        </article>
+    <% end %>
+</div>
