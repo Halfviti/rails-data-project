@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'about', to: 'pages#about'
   resources :characters, only: [:index, :show]
   resources :planets, only: [:index, :show]
   resources :films, only: [:index, :show]
