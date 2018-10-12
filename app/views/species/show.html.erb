@@ -1,0 +1,20 @@
+<div class="container">
+
+    <h1><%= @species.name %></h1>
+    <h6>Classification</h6>
+        <ul>
+            <li><%= @species.classification %></li>
+        </ul>
+    <h6>Designation</h6>
+        <ul>
+            <li><%= @species.designation %></li>
+        </ul>
+    <h6>Language</h6>
+        <ul>
+            <li><%= @species.language %></li>
+        </ul>
+    <h6>Homeworld</h6>
+        <ul>
+            <li><%= link_to @species.homeworld.name, @species.homeworld %></li>
+        </ul>
+</div>

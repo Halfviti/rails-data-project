@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :characters, only: [:index, :show]
   resources :planets, only: [:index, :show]
   resources :films, only: [:index, :show]
+  resources :species, only: [:index, :show]
   resources :welcome, only: [:index]
 
   root 'welcome#index'
