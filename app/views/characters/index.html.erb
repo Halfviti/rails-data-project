@@ -1,0 +1,11 @@
+<h1>Characters</h1>
+
+<div class="d-grid">
+    <% @characters.each do |character| %>
+        <article class="card d-col-flex">
+            <div class="card-body">
+                <h5 class="card-title"><%= link_to character.name, character %></h5>
+            </div>
+        </article>
+    <% end %>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+    <h1><%= @character.name %></h1>
+    <h6>Homeworld:</h6>
+                <%= @character.homeworld.name %>
+    <h6>Films:</h6>
+        <ul>
+            <% @character.films.each do |film| %>
+                <li>Episode <%= film.episode_id %>: <%= film.title %></li>
+            <% end %>
+        </ul>
+</div>
