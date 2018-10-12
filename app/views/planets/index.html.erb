@@ -1,5 +1,5 @@
 <h1>Planets</h1>
-
+<%= paginate @planets, window: 1 %>
 <div class="d-grid">
     <% @planets.each do |planet| %>
         <article class="card d-col-flex">

@@ -20,6 +20,19 @@ body{
     color: #FFF;
 }
 
+.pagination{
+    justify-content: flex-end;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    span{
+        padding: 0px 5px;
+        margin: 0px 1px;
+        border-radius: 5px;
+        background-color: #222222;
+    }
+}
+
 h1{
     color: $star-wars-yellow;
 }

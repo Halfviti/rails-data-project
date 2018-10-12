@@ -1,6 +1,6 @@
 <h1>Species</h1>
-
-<div class="d-grid grid-l">
+<%= paginate @species, window: 1 %>
+<div class="d-grid">
     <% @species.each do |sp| %>
         <article class="card d-col-flex">
             <div class="card-body">

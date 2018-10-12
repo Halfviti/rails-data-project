@@ -1,5 +1,6 @@
 <h1>Characters</h1>
 
+<%= paginate @characters, window: 1 %>
 <div class="d-grid">
     <% @characters.each do |character| %>
         <article class="card d-col-flex">
